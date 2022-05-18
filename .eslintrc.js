@@ -17,5 +17,7 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
+    indent: ['off', 2],
+    'vue/no-multiple-template-root': 'off'
   }
 }
