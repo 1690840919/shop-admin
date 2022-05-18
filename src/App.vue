@@ -1,14 +1,14 @@
 <template>
   <div>
     <img alt="Vue logo" src="./assets/logo.png" />
-    <h1>{{ name }}</h1>
-    <h1>{{ age }}</h1>
+    <Login />
+    <h1>{{name}}</h1>
   </div>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
+import Login from './views/Login/index.vue'
 const name = 'beitu'
-const age = 200
 </script>
 
 <style>
