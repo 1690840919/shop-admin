@@ -7,7 +7,7 @@
 </template>
 
 <script lang="ts" setup>
-import Login from './views/Login/index.vue'
+import Login from '@/views/Login/index.vue'
 const name = 'beitu'
 </script>
 
