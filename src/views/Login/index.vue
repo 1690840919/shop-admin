@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-const name = '登陆页111'
+const name = '登陆页'
 </script>
 
 <style>
