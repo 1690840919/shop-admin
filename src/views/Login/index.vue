@@ -8,7 +8,7 @@
 
 <script lang="ts" setup>
 const name = '登陆页'
-const age = 30
+const age = 22
 const score = 3000
 </script>
 
