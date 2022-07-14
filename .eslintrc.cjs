@@ -17,5 +17,7 @@ module.exports = {
     '@typescript-eslint'
   ],
   rules: {
+    // 不再检测组件必须驼峰命名
+    'vue/multi-word-component-names': 'off'
   }
 }
