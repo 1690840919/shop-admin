@@ -10,5 +10,6 @@ import Login from '@/views/login/index.vue'
 import Home from '@/views/home/index.vue'
 </script>
 
-<style scoped>
+<style lang="scss" scoped >
+
 </style>
