@@ -1,13 +1,10 @@
 <template>
   <div class="app">
-    <Login />
-    <Home />
+    <router-view/>
   </div>
 </template>
 
 <script setup lang="ts">
-import Login from '@/views/login/index.vue'
-import Home from '@/views/home/index.vue'
 </script>
 
 <style lang="scss" scoped >
