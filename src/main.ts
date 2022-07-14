@@ -4,7 +4,10 @@ import App from './App.vue'
 import '@/styles/index.scss'
 // 导入router
 import router from '@/router'
+// 导入vuex
+import { store, key } from '@/store'
 const app = createApp(App)
 app
   .use(router)
+  .use(store, key)
   .mount('#app')

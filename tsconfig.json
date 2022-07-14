@@ -15,6 +15,8 @@
       "DOM"
     ],
     "skipLibCheck": true,
+    // 为了vetur识别根目录，否则报类型红线提示
+    "baseUrl": "./",
     // ts类型提示？？？？？好像没生效
     "paths": {
       "@/*": [
