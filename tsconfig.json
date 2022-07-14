@@ -15,9 +15,10 @@
       "DOM"
     ],
     "skipLibCheck": true,
+    // ts类型提示？？？？？好像没生效
     "paths": {
       "@/*": [
-        "src/*"
+        "./src/*"
       ]
     }
   },

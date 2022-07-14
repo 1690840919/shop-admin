@@ -6,8 +6,8 @@
 </template>
 
 <script setup lang="ts">
-import Login from '@/views/login'
-import Home from '@/views/home'
+import Login from '@/views/login/index.vue'
+import Home from '@/views/home/index.vue'
 </script>
 
 <style scoped>
