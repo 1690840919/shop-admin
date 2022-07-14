@@ -5,6 +5,9 @@ import path from 'path'
 export default defineConfig({
   plugins: [vue()],
   resolve: {
+    // 省略后缀
+    extensions: ['.js', '.vue', 'json'],
+    // 模块路径
     alias: {
       '@': path.join(__dirname, 'src')
     }
