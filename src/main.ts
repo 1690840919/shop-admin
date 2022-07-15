@@ -6,8 +6,14 @@ import '@/styles/index.scss'
 import router from '@/router'
 // 导入vuex
 import { store, key } from '@/store'
+// 引入element-plus
+import ElementPlus from '@/plugins/elementPlus/index'
+// 引入element-plus-icon
+import ElementPlusIcon from '@/plugins/elementPlusIcon/index'
 const app = createApp(App)
 app
   .use(router)
   .use(store, key)
+  .use(ElementPlus)
+  .use(ElementPlusIcon)
   .mount('#app')

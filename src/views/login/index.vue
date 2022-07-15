@@ -1,6 +1,8 @@
 <template>
   <div class="login-page">
     登陆页面11111
+    <el-button>111</el-button>
+    <el-icon><Apple /></el-icon>
   </div>
 </template>
 

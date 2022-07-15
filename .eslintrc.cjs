@@ -18,6 +18,8 @@ module.exports = {
   ],
   rules: {
     // 不再检测组件必须驼峰命名
-    'vue/multi-word-component-names': 'off'
+    'vue/multi-word-component-names': 'off',
+    // 函数名字后面不需要空格
+    'space-before-function-paren': 0
   }
 }
