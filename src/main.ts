@@ -10,10 +10,13 @@ import { store, key } from '@/store'
 import ElementPlus from '@/plugins/elementPlus/index'
 // 引入element-plus-icon
 import ElementPlusIcon from '@/plugins/elementPlusIcon/index'
+// 导入全局组件
+import AllComponent from '@/components'
 const app = createApp(App)
 app
   .use(router)
   .use(store, key)
   .use(ElementPlus)
   .use(ElementPlusIcon)
+  .use(AllComponent)
   .mount('#app')

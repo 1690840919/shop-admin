@@ -1,8 +1,7 @@
 <template>
   <div class="login-page">
     登陆页面11111
-    <el-button>111</el-button>
-    <el-icon><Apple /></el-icon>
+    <svg-icon icon="user" :size="50" />
   </div>
 </template>
 
