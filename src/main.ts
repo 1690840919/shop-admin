@@ -12,6 +12,8 @@ import ElementPlus from '@/plugins/elementPlus/index'
 import ElementPlusIcon from '@/plugins/elementPlusIcon/index'
 // 导入全局组件
 import AllComponent from '@/components'
+// 导入国际化
+import i18n from '@/i18n'
 const app = createApp(App)
 app
   .use(router)
@@ -19,4 +21,5 @@ app
   .use(ElementPlus)
   .use(ElementPlusIcon)
   .use(AllComponent)
+  .use(i18n)
   .mount('#app')

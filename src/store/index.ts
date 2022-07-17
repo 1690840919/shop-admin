@@ -3,11 +3,13 @@ import { InjectionKey } from 'vue'
 import getters from './getters'
 import user from './modules/user'
 import { State } from './types/store'
+import common from './modules/common'
 
 export const store = createStore<State>({
   getters,
   modules: {
-    user
+    user,
+    common
   }
 })
 

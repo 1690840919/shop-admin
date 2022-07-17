@@ -11,7 +11,7 @@
           <img src="img/logo.png" alt="">
         </div>
         <div class="logo-title">
-          通用后台管理系统开发
+          {{ $t('msg.login.logoTitle') }}
         </div>
       </div>
     </div>
@@ -20,21 +20,10 @@
       <div class="login">
         <div class="login-title">
           <div class="text">
-            系统登陆
+            {{ $t('msg.login.loginTitle') }}
           </div>
           <div class="language-icon">
-            <el-dropdown>
-              <span class="el-dropdown-link">
-                <svg-icon type="iconfont" className="icon-zhongyingwen" :size="30" />
-              </span>
-              <template #dropdown>
-                <el-dropdown-menu>
-                  <el-dropdown-item>简体中文</el-dropdown-item>
-                  <el-dropdown-item>繁体中文</el-dropdown-item>
-                  <el-dropdown-item>English</el-dropdown-item>
-                </el-dropdown-menu>
-              </template>
-            </el-dropdown>
+            <language />
           </div>
         </div>
         <div class="login-form-box">
@@ -44,8 +33,12 @@
         <div class="login-menu">
           <!-- 选择登陆方式 -->
           <div class="menu-title">
-            <span class="text" @click="loginForm = 'user'">账号密码</span>
-            <span class="text" @click="loginForm = 'phone'">手机号登陆</span>
+            <span class="text" @click="loginForm = 'user'">
+              {{ $t('msg.login.loginMenuUser') }}
+            </span>
+            <span class="text" @click="loginForm = 'phone'">
+              {{ $t('msg.login.loginMenuPhone') }}
+            </span>
           </div>
           <!-- 第三方登陆 -->
           <icon-login />
@@ -123,6 +116,7 @@ const loginForm = ref('user')
         color: white;
         font-weight: bolder;
         letter-spacing: 2px;
+        padding: 0 60px;
       }
     }
   }
@@ -145,7 +139,6 @@ const loginForm = ref('user')
         text-align: center;
         letter-spacing: 5px;
         position: relative;
-
         .language-icon {
           position: absolute;
           right: 0;
