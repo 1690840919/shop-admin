@@ -3,6 +3,7 @@ export interface User {
     name: string
     age: number
   }
+  token: string
 }
 
 export interface State {

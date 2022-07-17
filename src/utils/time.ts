@@ -4,7 +4,7 @@
  * @param format 时间格式 YY-MM-DD hh:mm:ss
  * @returns 返回格式化后的日期
  */
-export const getTime = (time: number, format: string) => {
+export const getTime = (time: number, format: string = 'YY-MM-DD hh:mm:ss') => {
   const date = new Date(time)
   const year = /(y+|Y+)/.test(format)
   if (year) {
