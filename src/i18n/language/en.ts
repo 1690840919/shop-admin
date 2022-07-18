@@ -3,7 +3,13 @@ export default {
     logoTitle: 'Management System Development',
     loginTitle: 'System Login',
     loginMenuUser: 'account key',
-    loginMenuPhone: 'phone code'
+    loginMenuPhone: 'phone code',
+    loginBtn: 'Login',
+    getPhoneCode: 'Get Code',
+    placeholderUsername: 'Please enter a user name',
+    placeholderPassword: 'Please enter your password',
+    placeholderCode: 'Please enter the verification code',
+    placeholderPhone: 'Please enter your mobile phone number'
   },
   common: {
     commonLanguageZh: 'Chinese',

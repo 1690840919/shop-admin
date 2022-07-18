@@ -4,6 +4,7 @@ export interface User {
     age: number
   }
   token: string
+  refreshToken: string
 }
 
 export interface Common {

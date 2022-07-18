@@ -34,7 +34,14 @@ router.beforeEach((to, from, next) => {
     // 未登录
     if (to.meta.isAuth) {
       // 需要认证
-      next('/login')
+      next({
+        name: 'login',
+        // 通过url地址，传递重定向
+        query: {
+          // 把原来需要访问的网页，告诉登陆页面
+          redirect: to.fullPath
+        }
+      })
     } else {
       // 不需要认证
       next()

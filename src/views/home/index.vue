@@ -1,6 +1,6 @@
 <template>
   <div class="home-page">
-    {{ $store.state.user.userInfo.name }}
+    111
     <Home />
   </div>
 </template>
