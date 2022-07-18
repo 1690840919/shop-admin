@@ -68,7 +68,7 @@ const loginFormData = reactive({
     .icon {
       position: relative;
       left: -2px;
-      top: 4px;
+      top: 2px;
     }
   }
 

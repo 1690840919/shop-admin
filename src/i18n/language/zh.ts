@@ -9,7 +9,8 @@ export default {
     placeholderUsername: '请输入用户名',
     placeholderPassword: '请输入密码',
     placeholderCode: '请输入验证码',
-    placeholderPhone: '请输入手机号码'
+    placeholderPhone: '请输入手机号码',
+    logout: '退出登陆'
   },
   common: {
     commonLanguageZh: '简体中文',
