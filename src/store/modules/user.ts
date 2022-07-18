@@ -6,7 +6,6 @@ import { loginService } from '@/api/user/login'
 import router from '@/router'
 import { ElMessage } from 'element-plus'
 import { setLoginStartTime } from '@/utils/tokenCheck'
-import { store } from '..'
 export default {
   namespaced: true,
   state: () => ({
