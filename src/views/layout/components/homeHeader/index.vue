@@ -97,6 +97,7 @@ import { ArrowRight } from '@element-plus/icons-vue'
 import { useStore } from '@/store'
 import { useRouter } from 'vue-router'
 import { ref, watch } from 'vue'
+import { RouteTag } from '@/store/types/store.ts'
 const store = useStore()
 const router = useRouter()
 // 点击退出登陆
@@ -104,29 +105,29 @@ const handleCancelLoginBtn = () => {
   store.dispatch('user/logout', true)
 }
 // 点击折叠菜单
-const handleCollapse = value => {
+const handleCollapse = (value: Boolean) => {
   store.commit('common/setIsCollapse', value)
 }
 // 点击tag
-const handleTag = (item, index) => {
+const handleTag = (item: RouteTag, index: number) => {
   router.push(item.path)
   store.commit('layout/setCurrentTagIndex', index)
 }
 // 点击关闭tag
-const handleCloseTag = (item, index) => {
+const handleCloseTag = (item: RouteTag, index: number) => {
   store.commit('common/delRouteTag', index)
 }
 // 显示鼠标右键菜单
 const showMenuWindow = ref(false)
 // 点金鼠标右键菜单的index
-const showMenuWindowIndex = ref('')
+const showMenuWindowIndex = ref(0)
 // 鼠标右键菜单位置
 const menuPositionData = ref({
-  top: 0,
-  left: 0
+  top: '0',
+  left: '0'
 })
 // 点击鼠标右键
-const openMenu = (e, index) => {
+const openMenu = (e, index:number) => {
   const { x, y } = e
   menuPositionData.value.left = x + 'px'
   menuPositionData.value.top = y + 'px'

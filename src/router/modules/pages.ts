@@ -20,9 +20,9 @@ export default [
         meta: {
           title: '个人中心',
           icon: 'platform',
-          keepAlive: false, // 缓存组件
-          isTab: true, // tab菜单
-          isAuth: true // 限制权限
+          keepAlive: false, // 属于缓存组件
+          isTab: true, // 属于tab菜单
+          isAuth: true // 属于登陆权限
         }
       }
     ]

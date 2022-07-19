@@ -38,9 +38,9 @@ const menuData = [
   },
   {
     id: '2',
-    menuName: '用户管理',
-    menuRouter: '/userManage',
-    menuIcon: 'user'
+    menuName: '资源管理',
+    menuRouter: '/resourceManage',
+    menuIcon: 'folder'
   },
   {
     id: '3',
@@ -50,21 +50,53 @@ const menuData = [
     children: [
       {
         id: '3-1',
-        menuName: '角色管理',
-        menuRouter: '/permissionManage/roleManage',
+        menuName: '用户管理',
+        menuRouter: '/permissionManage/userManage',
         menuIcon: 'user'
       },
       {
         id: '3-2',
-        menuName: '菜单管理',
-        menuRouter: '/permissionManage/menuManage',
-        menuIcon: 'menu'
+        menuName: '角色管理',
+        menuRouter: '/permissionManage/roleManage',
+        menuIcon: 'avatar'
       },
       {
         id: '3-3',
-        menuName: '资源管理',
-        menuRouter: '/permissionManage/resourceManage',
-        menuIcon: 'folder'
+        menuName: '菜单管理',
+        menuRouter: '/permissionManage/menuManage',
+        menuIcon: 'grid'
+      }
+    ]
+  },
+  {
+    id: '4',
+    menuName: '系统监控',
+    menuRouter: 'monitor',
+    menuIcon: 'setUp',
+    children: [
+      {
+        id: '4-1',
+        menuName: '在线用户',
+        menuRouter: '/monitor/onlineUser',
+        menuIcon: 'user'
+      },
+      {
+        id: '4-2',
+        menuName: '登陆日志',
+        menuRouter: '/monitor/loginLog',
+        menuIcon: 'promotion'
+      },
+      {
+        id: '4-3',
+        menuName: '服务监控',
+        menuRouter: '/monitor/serviceMonitor',
+        menuIcon: 'trendCharts'
+      },
+      {
+        id: '4-4',
+        menuName: '请求日志',
+        menuRouter: '/permissionManage/requestLog',
+        menuIcon: 'mouse'
       }
     ]
   }
@@ -72,6 +104,8 @@ const menuData = [
 // 路由变化执行
 const handleRouteChange = route => {
   currentMenu.value = route.path
+  // 改变页面标题
+  document.title = route.meta.title
   // 根据路由表的标识isTab，判断是否记录tab
   if (!route.meta.isTab) return
   // 记录tag

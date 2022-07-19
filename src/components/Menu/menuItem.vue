@@ -10,7 +10,7 @@
       >
         <template #title>
           <span class="icon-box">
-            <svg-icon :size="20" :icon="item[props.icon]" />
+            <svg-icon :size="20" :icon="item[props.icon]" top="-2px" />
           </span>
           <span>{{ item[props.name] }}</span>
         </template>
@@ -26,7 +26,7 @@
       <!-- 不存在子菜单的 -->
       <el-menu-item :key="item.id" v-else :index="item[props.path]">
         <span class="icon-box">
-          <svg-icon :size="20" :icon="item[props.icon]" />
+          <svg-icon :size="20" :icon="item[props.icon]" top="-2px" />
         </span>
         <!-- template是为了折叠后能够显示菜单名提示 -->
         <template #title>
